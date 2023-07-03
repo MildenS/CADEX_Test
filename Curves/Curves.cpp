@@ -52,6 +52,7 @@ int main()
     catch (...)
     {
         std::cout << "Something wrong with curve generation\n";
+        return 1;
     }
 
     //DisplayCurves(vec1);
