@@ -1,25 +1,6 @@
 #pragma once
 #include<iostream>
 
-//
-//struct SpacePoint
-//{
-//	SpacePoint(double x=0, double y=0, double z=0)
-//	{
-//		this->x = x;
-//		this->y = y;
-//		this->z = z;
-//	}
-//
-//	double X() { return x; }
-//	double Y() { return y; }
-//	double Z() { return z; }
-//
-//private:
-//
-//	double x, y, z;
-//};
-
 
 enum class CurveType
 {
