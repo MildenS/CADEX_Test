@@ -31,10 +31,9 @@ Ellipse::Ellipse(double a, double b)
 std::string Ellipse::ToString()
 {
     std::string info = "Ellipse, a = ";
-    info += std::to_string(a);
-    info += ", b = ";
-    info += std::to_string(b);
-    info += '\n';
+    info += std::to_string(a) + ", b = ";;
+    info += std::to_string(b) + '\n';
+    info = info.substr(0, info.find('.') + 4) + '\n';
     return info;
 }
 

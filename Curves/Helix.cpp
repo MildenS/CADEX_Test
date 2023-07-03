@@ -32,10 +32,9 @@ Helix::Helix(double Radius, double Step)
 std::string Helix::ToString()
 {
     std::string info = "Helix, radius = ";
-    info += std::to_string(Radius);
-    info += ", step = ";
+    info += std::to_string(Radius) + ", step = ";
     info += std::to_string(Step);
-    info += '\n';
+    info = info.substr(0, info.find('.') + 4) + '\n';
     return info;
 }
 

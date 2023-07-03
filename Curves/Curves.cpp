@@ -6,7 +6,7 @@
 #include "Ellipse.h"
 #include "Helix.h"
 
-//Количество генерируемых кривых
+//Количество генерируемых кривых и их максимальный радиус
 #define CurvesNum 100
 #define MaxRadius 500
 
@@ -40,6 +40,7 @@ int main()
 
     std::cout.precision(3);
 
+    //Проверка 2 задания
     try
     {
         FillVector(vec1);
@@ -55,14 +56,18 @@ int main()
 
     //DisplayCurves(vec1);
 
-    //DisplayCurves(vec1, M_PI / 4);
+    //Проверка 3 задания
+    DisplayCurves(vec1, M_PI / 4);
 
+    //Проверка 4 задания
     GetCircles(vec1, vec2);
     DisplayCurves(vec2);
 
+    //Проверка 5 задания
     std::sort(vec2.begin(),vec2.end(), CompareTo);
     DisplayCurves(vec2);
 
+    //Проверка 6 задания
     std::cout << "Sum of radii in second container = " << RadiiSum(vec2) << '\n';
 }
 
@@ -118,7 +123,7 @@ void DisplayCurves(const std::vector<std::shared_ptr<Curve>>& vec, double t)
     {
         Vector3D point = vec[i]->GetPoint(t);
         Vector3D derived = vec[i]->GetDerived(t);
-        std::cout <<std::fixed<< i + 1 << " Curve:\n Point: " << point << "\nDerived: " << derived<<'\n';
+        std::cout <<std::fixed<<'\t'<< i + 1 << " Curve:\nPoint: " << point << "\nDerived: " << derived << '\n';
     }
 }
 

@@ -29,8 +29,8 @@ Circle::Circle(double Radius)
 std::string Circle::ToString()
 {
 	std::string info = "Circle, radius = ";
-	info += std::to_string(Radius);
-	info += '\n';
+	info += std::to_string(Radius) + '\n';
+	info = info.substr(0, info.find('.') + 4) + '\n';
 	return info;
 }
 
