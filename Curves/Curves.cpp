@@ -48,6 +48,7 @@ int main()
     catch (std::invalid_argument& error)
     {
         std::cout << error.what() << '\n';
+        return 1;
     }
     catch (...)
     {
