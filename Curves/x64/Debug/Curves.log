@@ -1,0 +1,3 @@
+﻿  Curves.cpp
+E:\CADEX_test\Curves\Curves\Curves.cpp(145,39): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Curves.vcxproj -> E:\CADEX_test\Curves\x64\Debug\Curves.exe
